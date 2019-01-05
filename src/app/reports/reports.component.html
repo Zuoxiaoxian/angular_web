@@ -2,14 +2,17 @@
 
 
   <h1>报表</h1>
+  <button (click)="getSelectedRows()">Get Selected Rows</button>
   <div ng-controller="MainCtrl as $ctrl">
-      <ag-grid-angular 
+      <ag-grid-angular
+        #agGrid 
         style="width: 500px; height: 500px;" 
         class="ag-theme-balham"
         [enableSorting] = "true"
         [enableFilter] = "true"
-        [rowData]="rowData" 
+        [rowData]="rowData | async" 
         [columnDefs]="columnDefs"
+        rowSelection = "multiple"
         >
       </ag-grid-angular>
   </div>
