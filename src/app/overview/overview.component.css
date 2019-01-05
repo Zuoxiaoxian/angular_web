@@ -1,0 +1,16 @@
+.btn-lg {
+    padding: 10px 20px;
+    font-weight: bold;
+  }
+
+.site-wrapper{
+    background-color: transparent;
+    border-bottom-color: #131212;
+    border-bottom-color: rgba(255,255,255,.25);
+  }
+
+  
+.site-wrapper-inner {
+vertical-align: middle;
+}
+

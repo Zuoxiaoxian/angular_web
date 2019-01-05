@@ -1,17 +1,32 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
-import { AppComponent } from './app.component';
+// Echarts
+import { NgxEchartsModule } from "@twp0217/ngx-echarts";
 
-//  布局
+import { AppComponent } from './app.component';
+import { OverviewComponent } from './overview/overview.component';
+import { AppRoutingModule } from './/app-routing.module';
+import { DashboardComponent } from './dashboard/dashboard.component';
+import { MsgsettingComponent } from './msgsetting/msgsetting.component';
+import { HelpComponent } from './help/help.component';
+import { ReportsComponent } from './reports/reports.component';
+
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    OverviewComponent,
+    DashboardComponent,
+    MsgsettingComponent,
+    HelpComponent,
+    ReportsComponent
   ],
   imports: [
     BrowserModule,
+    AppRoutingModule,
+    NgxEchartsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
