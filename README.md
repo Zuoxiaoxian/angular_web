@@ -1,3 +1,5 @@
+## clone 之后 npm install, 安装依赖， 运行 ng serve 
+
 # GqShowMsg
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.8.
