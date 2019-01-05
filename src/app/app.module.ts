@@ -7,6 +7,9 @@ import { NgxEchartsModule } from "@twp0217/ngx-echarts";
 // ag-grid
 import { AgGridModule } from "ag-grid-angular";
 
+// ag-grid 的企业功能，用于分组
+import 'ag-grid-enterprise'
+
 // http
 import { HttpClientModule } from "@angular/common/http";
 

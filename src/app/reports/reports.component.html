@@ -8,6 +8,7 @@
         #agGrid 
         style="width: 500px; height: 500px;" 
         class="ag-theme-balham"
+        [autoGroupColumnDef]="autoGroupColumnDef"
         [enableSorting] = "true"
         [enableFilter] = "true"
         [rowData]="rowData | async" 
