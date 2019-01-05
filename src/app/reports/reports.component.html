@@ -2,7 +2,17 @@
 
 
   <h1>报表</h1>
-
+  <div ng-controller="MainCtrl as $ctrl">
+      <ag-grid-angular 
+        style="width: 500px; height: 500px;" 
+        class="ag-theme-balham"
+        [enableSorting] = "true"
+        [enableFilter] = "true"
+        [rowData]="rowData" 
+        [columnDefs]="columnDefs"
+        >
+      </ag-grid-angular>
+  </div>
 
 
 </div>
